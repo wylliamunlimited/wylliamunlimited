@@ -6,7 +6,8 @@ Futuristically: a software developer involved in wide range of areas 🤣
 ## My obsessions:
 - Artifical Intelligence 🤖
 - Pathology 🦠
-- Brain Computer Interface 🧬
+- Genetics 🧬
+- Brain Computer Interface 🧠
 - Financial Engineer & Quantitative Analysis 💰
 - Building software in general 💻
 
