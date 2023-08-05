@@ -1,6 +1,6 @@
 ### Hi I am Wylliam 🍪
 
-Currently: a student studying computer science, data science, and biomedical engineering 😆 \n
+Currently: a student studying computer science, data science, and biomedical engineering 😆  
 Futuristically: a software developer involved in wide range of areas 🤣 
 
 ## My obsessions:
