@@ -12,11 +12,17 @@ Futuristically: a software developer involved in wide range of areas 🤣
 
 ## Things I have done:
     1. Android App (Quite a while ago and did not save on GitHub 😢)
-          - I do have a video 🤭 link: https://youtu.be/1h5AN02Lfs4
+          - I do have a video 🤭 link: [Demo Video](https://youtu.be/1h5AN02Lfs4)
     2. Arduino building a red light therapy testing device (experiment purpose) (again, no code saved 😢)
           - some circuit wiring and coding 😝
-          - video presentation link: [https://youtu.be/1h5AN02Lfs4](https://drive.google.com/file/d/1HKBMXxRPRHany2UjMTYETK4QKEFj6E00/view?usp=share_link)
+          - video presentation link: [Demo Video](https://youtu.be/1h5AN02Lfs4](https://drive.google.com/file/d/1HKBMXxRPRHany2UjMTYETK4QKEFj6E00/view?usp=share_link)
 
+## What I am doing:
+I am just ambitious and love to keep myself busy... 😗
+    1. Flutter Web App && AWS - - - A little business idea but I take it as a learning opportunit 😜
+    2. Quantitative Analysis - - - Playing around and learning about it 🤭
+    3. Kaggle Competitions - - - Building AI models. Still learning :P
+    
 
 <!--
 **WyllCCLIAM/WyllCCLIAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
