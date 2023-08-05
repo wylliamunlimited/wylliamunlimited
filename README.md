@@ -19,6 +19,7 @@ Futuristically: a software developer involved in wide range of areas 🤣
 
 ## What I am doing:
 I am just ambitious and love to keep myself busy... 😗
+
     1. Flutter Web App && AWS - - - A little business idea but I take it as a learning opportunit 😜
     2. Quantitative Analysis - - - Playing around and learning about it 🤭
     3. Kaggle Competitions - - - Building AI models. Still learning :P
