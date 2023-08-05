@@ -24,7 +24,7 @@ Futuristically: a software developer involved in wide range of areas 🤣
     2. Quantitative Analysis - - - Playing around and learning about it 🤭
     3. Kaggle Competitions - - - Building AI models. Still learning :P
 
-<iframe src="https://giphy.com/embed/26u4aK890tzngrA3K" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thegiftedonfox-fox-marvel-26u4aK890tzngrA3K">via GIPHY</a></p>
+![](https://giphy.com/embed/26u4aK890tzngrA3K)
 
 <!--
 **WyllCCLIAM/WyllCCLIAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
