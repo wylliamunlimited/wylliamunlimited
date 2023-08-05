@@ -24,7 +24,7 @@ Futuristically: a software developer involved in wide range of areas 🤣
     2. Quantitative Analysis - - - Playing around and learning about it 🤭
     3. Kaggle Competitions - - - Building AI models. Still learning :P
 
-![](https://giphy.com/embed/26u4aK890tzngrA3K)
+![]([https://giphy.com/embed/26u4aK890tzngrA3K](https://media2.giphy.com/media/26u4aK890tzngrA3K/giphy.gif?cid=ecf05e47xtnlxqh4t52ia4sdjkc0ogejhllt0l5ymyfn6wty&ep=v1_gifs_related&rid=giphy.gif&ct=g))
 
 <!--
 **WyllCCLIAM/WyllCCLIAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
