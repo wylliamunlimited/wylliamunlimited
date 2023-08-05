@@ -3,7 +3,7 @@
 Currently: a student studying computer science, data science, and biomedical engineering 😆
 Futuristically: a software developer involved in wide range of areas 🤣 
 
-## My obseesions:
+## My obsessions:
     - Artifical Intelligence 🤖
     - Pathology 🦠
     - Brain Computer Interface 🧬
