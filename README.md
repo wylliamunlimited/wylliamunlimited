@@ -15,7 +15,7 @@ Futuristically: a software developer involved in wide range of areas 🤣
           - I do have a video 🤭 link: ![Demo Video](https://youtu.be/1h5AN02Lfs4)
     2. Arduino building a red light therapy testing device (experiment purpose) (again, no code saved 😢)
           - some circuit wiring and coding 😝
-          - video presentation link: ![Demo Video](https://youtu.be/1h5AN02Lfs4](https://drive.google.com/file/d/1HKBMXxRPRHany2UjMTYETK4QKEFj6E00/view?usp=share_link)
+          - video presentation link: ![Demo Video](https://drive.google.com/file/d/1HKBMXxRPRHany2UjMTYETK4QKEFj6E00/view?usp=share_link)
 
 ## What I am doing:
 I am just ambitious and love to keep myself busy... 😗
