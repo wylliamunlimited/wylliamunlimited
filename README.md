@@ -24,7 +24,7 @@ I am just ambitious and love to keep myself busy... 😗
 2. Quantitative Analysis - - - Playing around and learning about it 🤭
 3. Kaggle Competitions - - - Building AI models. Still learning :P
 
-[](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhxOTN5bXg4dW4ya3Foa2k2eG9xbjYxazRqYXJxaTMybjljcjNxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26u4aK890tzngrA3K/giphy.gif)
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhxOTN5bXg4dW4ya3Foa2k2eG9xbjYxazRqYXJxaTMybjljcjNxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26u4aK890tzngrA3K/giphy.gif)
 
 <!--
 **WyllCCLIAM/WyllCCLIAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
