@@ -4,11 +4,11 @@ Currently: a student studying computer science, data science, and biomedical eng
 Futuristically: a software developer involved in wide range of areas 🤣 
 
 ## My obsessions:
-    - Artifical Intelligence 🤖
-    - Pathology 🦠
-    - Brain Computer Interface 🧬
-    - Financial Engineer & Quantitative Analysis 💰
-    - Building software in general 💻
+- Artifical Intelligence 🤖
+- Pathology 🦠
+- Brain Computer Interface 🧬
+- Financial Engineer & Quantitative Analysis 💰
+- Building software in general 💻
 
 ## Things I have done:
 1. Android App (Quite a while ago and did not save on GitHub 😢)
