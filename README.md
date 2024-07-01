@@ -4,11 +4,10 @@ Currently: a student studying computer science, data science, and biomedical eng
 Futuristically: a software developer involved in wide range of areas 🤣 
 
 ## My obsessions:
-- Artifical Intelligence 🤖
+- Artificial General Intelligence / Generative AI 🤖
 - Pathology 🦠
 - Genetics 🧬
 - Brain Computer Interface 🧠
-- Financial Engineer & Quantitative Analysis 💰
 - Building software in general 💻
 
 ## Things I have done:
@@ -17,13 +16,6 @@ Futuristically: a software developer involved in wide range of areas 🤣
 2. Arduino building a red light therapy testing device (experiment purpose) (again, no code saved 😢)
       - some circuit wiring and coding 😝
       - video presentation link: [Demo Video](https://drive.google.com/file/d/1HKBMXxRPRHany2UjMTYETK4QKEFj6E00/view?usp=share_link)
-
-## What I am doing:
-I am just ambitious and love to keep myself busy... 😗
-
-1. Flutter Web App && AWS - - - A little business idea but I take it as a learning opportunit 😜
-2. Quantitative Analysis - - - Playing around and learning about it 🤭
-3. Kaggle Competitions - - - Building AI models. Still learning :P
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhxOTN5bXg4dW4ya3Foa2k2eG9xbjYxazRqYXJxaTMybjljcjNxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26u4aK890tzngrA3K/giphy.gif)
 
