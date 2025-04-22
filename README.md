@@ -1,17 +1,12 @@
 ### Hi I am Wylliam 🍪
 
-Currently: a student studying computer science, data science, and biomedical engineering 😆  
-Futuristically: a software developer involved in wide range of areas 🤣 
+Currently: a student studying computer science and biomedical engineering, minoring in data science 😆  
+Futuristically: working with bulk data :P 
 
 ## My obsessions:
 - Artificial General Intelligence / Generative AI 🤖
-- Pathology 🦠
-- Genetics 🧬
-- Brain Computer Interface 🧠
+- Data Science & Analytics 🧠
 - Building software in general 💻
-
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhxOTN5bXg4dW4ya3Foa2k2eG9xbjYxazRqYXJxaTMybjljcjNxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26u4aK890tzngrA3K/giphy.gif)
-
 
 <!-- ## Tools I use: -->
 
