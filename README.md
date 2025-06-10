@@ -1,11 +1,12 @@
 ### Hi I am Wylliam 🍪
 
-Currently: a student studying computer science and biomedical engineering, minoring in data science 😆  
-Futuristically: working with bulk data :P 
+Currently: a new grad with dual degree in computer science and biomedical engineering, minor in data science 😆  
+Futuristically: working with bulk data, training AI, drinking a lot of peach green tea 🍵
 
 ## My obsessions:
 - Artificial General Intelligence / Generative AI 🤖
-- Data Science & Analytics 🧠
+- Neuroengineering 🧠
+- Data Science & Analytics 📈
 - Building software in general 💻
 
 <!-- ## Tools I use: -->
