@@ -1,6 +1,7 @@
 ### Hi I am Wylliam 🍪
 
-Currently: a new grad with dual degree in computer science and biomedical engineering, minor in data science 😆  
+Currently: data engineer @ a startup
+Past: dual degree grad in computer science and biomedical engineering
 Futuristically: working with bulk data, training AI, drinking a lot of peach green tea 🍵
 
 ## My obsessions:
