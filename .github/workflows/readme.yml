@@ -1,0 +1,41 @@
+name: build readme
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - README.template.md
+      - scripts/build_readme.py
+      - .github/workflows/readme.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Render README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: WyllCCLIAM
+          START_DATE: "2000-01-01"
+        run: python scripts/build_readme.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "readme-bot"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: refresh readme stats"
+          git push
