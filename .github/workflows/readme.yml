@@ -2,7 +2,7 @@ name: build readme
 
 on:
   schedule:
-    - cron: "17 6 * * *"
+    - cron: "17 6 * * 1"
   workflow_dispatch:
   push:
     paths:
@@ -17,9 +17,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -27,8 +27,10 @@ jobs:
 
       - name: Render README
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USER: WyllCCLIAM
+          # READScoped PAT preferred: the default GITHUB_TOKEN cannot read
+          # user-level contributionsCollection or private contributions.
+          GH_TOKEN: ${{ secrets.README_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: wylliamunlimited
           START_DATE: "2000-01-01"
         run: python scripts/build_readme.py
 

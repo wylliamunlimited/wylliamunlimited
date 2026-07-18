@@ -1,12 +1,15 @@
 """Fill README.template.md placeholders with live GitHub stats.
 
 Run by .github/workflows/readme.yml. Writes README.md.
-Placeholders are padded to the same visual width they replace so the
-two-column ASCII layout never shifts.
+
+Fails soft: if a stat can't be fetched, that placeholder is left showing
+"n/a" and the rest of the README still renders. A broken API call should
+never leave the profile blank.
 """
 
 import os
 import re
+import sys
 from datetime import date, datetime, timezone
 
 import requests
@@ -21,38 +24,37 @@ HEAD = {"Authorization": f"bearer {TOKEN}", "Accept": "application/vnd.github+js
 
 
 def uptime() -> str:
-    """Human 'N years, N months, N days' since START."""
     t = date.today()
-    y = t.year - START.year
-    m = t.month - START.month
-    d = t.day - START.day
+    y, m, d = t.year - START.year, t.month - START.month, t.day - START.day
     if d < 0:
         m -= 1
-        prev = (t.replace(day=1) - date.resolution)
-        d += prev.day
+        d += (t.replace(day=1) - date.resolution).day
     if m < 0:
         y -= 1
         m += 12
     return f"{y} years, {m} months, {d} days"
 
 
-def repo_count() -> int:
-    """Public repos owned by USER."""
+def repo_count() -> str:
     r = requests.get(f"{API}/users/{USER}", headers=HEAD, timeout=30)
     r.raise_for_status()
-    return r.json()["public_repos"]
+    return f"{r.json()['public_repos']:,}"
 
 
-def lifetime_commits() -> int:
-    """Total commit contributions.
+def lifetime_commits() -> str:
+    """Sum commit contributions year by year.
 
     contributionsCollection accepts at most a one-year window, so we walk
-    year by year from account creation to now and sum.
+    from account creation to now. restrictedContributionsCount covers
+    private repos and requires a PAT plus "Include private contributions"
+    enabled in GitHub profile settings.
     """
-    created = requests.get(f"{API}/users/{USER}", headers=HEAD, timeout=30).json()["created_at"]
-    start_year = datetime.fromisoformat(created.replace("Z", "+00:00")).year
+    meta = requests.get(f"{API}/users/{USER}", headers=HEAD, timeout=30)
+    meta.raise_for_status()
+    start_year = datetime.fromisoformat(
+        meta.json()["created_at"].replace("Z", "+00:00")
+    ).year
     now = datetime.now(timezone.utc)
-    total = 0
 
     q = """
     query($user:String!, $from:DateTime!, $to:DateTime!) {
@@ -64,43 +66,57 @@ def lifetime_commits() -> int:
       }
     }
     """
+    total = 0
     for yr in range(start_year, now.year + 1):
         frm = datetime(yr, 1, 1, tzinfo=timezone.utc)
         to = min(datetime(yr, 12, 31, 23, 59, 59, tzinfo=timezone.utc), now)
         res = requests.post(
             GQL,
             json={"query": q, "variables": {
-                "user": USER,
-                "from": frm.isoformat(),
-                "to": to.isoformat(),
-            }},
+                "user": USER, "from": frm.isoformat(), "to": to.isoformat()}},
             headers=HEAD,
             timeout=30,
         )
         res.raise_for_status()
-        c = res.json()["data"]["user"]["contributionsCollection"]
+        payload = res.json()
+        if payload.get("errors"):
+            raise RuntimeError(f"GraphQL: {payload['errors'][0].get('message')}")
+        c = payload["data"]["user"]["contributionsCollection"]
         total += c["totalCommitContributions"] + c["restrictedContributionsCount"]
-    return total
+    return f"{total:,}"
+
+
+def safe(name, fn):
+    try:
+        v = fn()
+        print(f"  {name}: {v}")
+        return v
+    except Exception as exc:
+        print(f"  {name}: FAILED ({exc})", file=sys.stderr)
+        return "n/a"
 
 
 def main() -> None:
+    print(f"Rendering for user: {USER}")
     values = {
-        "uptime": uptime(),
-        "repos": f"{repo_count():,}",
-        "commits": f"{lifetime_commits():,}",
+        "uptime": safe("uptime", uptime),
+        "repos": safe("repos", repo_count),
+        "commits": safe("commits", lifetime_commits),
     }
 
     tpl = open("README.template.md", encoding="utf-8").read()
 
-    # Replace each {{ key }} and pad so the right column keeps its width.
     def sub(match: re.Match) -> str:
         key = match.group(1).strip().lower()
         if key not in values:
             return match.group(0)
+        # pad to the placeholder's width so the ASCII columns stay aligned
         return values[key].ljust(len(match.group(0)))
 
-    out = re.sub(r"\{\{\s*(\w+)\s*\}\}", sub, tpl)
-    open("README.md", "w", encoding="utf-8").write(out)
+    open("README.md", "w", encoding="utf-8").write(
+        re.sub(r"\{\{\s*(\w+)\s*\}\}", sub, tpl)
+    )
+    print("Wrote README.md")
 
 
 if __name__ == "__main__":
