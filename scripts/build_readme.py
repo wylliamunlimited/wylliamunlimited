@@ -102,6 +102,8 @@ def main() -> None:
         "uptime": safe("uptime", uptime),
         "repos": safe("repos", repo_count),
         "commits": safe("commits", lifetime_commits),
+        # Static, env-driven field (no API call). Set PAPER in the workflow.
+        "paper": os.environ.get("PAPER", "n/a"),
     }
 
     tpl = open("README.template.md", encoding="utf-8").read()
