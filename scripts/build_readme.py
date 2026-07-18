@@ -16,16 +16,25 @@ import requests
 
 USER = os.environ["GH_USER"]
 TOKEN = os.environ["GH_TOKEN"]
-START = datetime.fromisoformat(os.environ.get("START_DATE", "2000-01-01")).date()
 
 API = "https://api.github.com"
 GQL = "https://api.github.com/graphql"
 HEAD = {"Authorization": f"bearer {TOKEN}", "Accept": "application/vnd.github+json"}
 
 
+def account_created() -> date:
+    r = requests.get(f"{API}/users/{USER}", headers=HEAD, timeout=30)
+    r.raise_for_status()
+    return datetime.fromisoformat(
+        r.json()["created_at"].replace("Z", "+00:00")
+    ).date()
+
+
 def uptime() -> str:
+    """Account age: today minus the GitHub account creation date."""
+    start = account_created()
     t = date.today()
-    y, m, d = t.year - START.year, t.month - START.month, t.day - START.day
+    y, m, d = t.year - start.year, t.month - start.month, t.day - start.day
     if d < 0:
         m -= 1
         d += (t.replace(day=1) - date.resolution).day
@@ -36,9 +45,23 @@ def uptime() -> str:
 
 
 def repo_count() -> str:
-    r = requests.get(f"{API}/users/{USER}", headers=HEAD, timeout=30)
-    r.raise_for_status()
-    return f"{r.json()['public_repos']:,}"
+    """Count public repos the user owns, excluding forks."""
+    count = 0
+    page = 1
+    while True:
+        r = requests.get(
+            f"{API}/users/{USER}/repos",
+            headers=HEAD,
+            params={"per_page": 100, "page": page, "type": "owner"},
+            timeout=30,
+        )
+        r.raise_for_status()
+        batch = r.json()
+        if not batch:
+            break
+        count += sum(1 for repo in batch if not repo["fork"])
+        page += 1
+    return f"{count:,}"
 
 
 def lifetime_commits() -> str:
