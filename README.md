@@ -1,29 +1,27 @@
-### Hi I am Wylliam 🍪
-
-Currently: data engineer @ a startup
-Past: dual degree grad in computer science and biomedical engineering
-Futuristically: working with bulk data, training AI, drinking a lot of peach green tea 🍵
-
-## My obsessions:
-- Artificial General Intelligence / Generative AI 🤖
-- Neuroengineering 🧠
-- Data Science & Analytics 📈
-- Building software in general 💻
-
-<!-- ## Tools I use: -->
-
-
-<!--
-**WyllCCLIAM/WyllCCLIAM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+,...........................................   wyll@github ------------------------
+,,,,,,......................................
+,,,,,..,,,.,.,,,,,,.,.......................   Role:     ......  data engineer @ startup
+,,,,,,,,,,,,,,,,,,,,,,,,,,..................   Trained:  ......  CS + Biomedical Eng
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,...............
+,,,,,,,,,,,,,,,,,::;;;;:,,,,,,,,,,,,,,,,,,,,   Reads ------------------------------
+:::,,,,,,,,,,:jg%###@@@@#%j;::,,,,,,,,,,,,,,   Domain:   ......  -omics, neuro, biosignals
+::::::::::,;%@@##@@###@@@@@@%:::::::,,,,,:::   Build:    ......  pipelines that respect the assay
+::::::::::j@@@@@@#@@@#####%#@%::::::::::::::
+:::::::::;@@@@@@@@#g;:,,...:#@;:::::::::::::   Stack ------------------------------
+;;:::::;:g@@@%g;::,.        ,%j;;;;;;;;;::::   Lang:     ......  Python, SQL, JS
+;;;;;;;;;j@#;::,,,..   ...   jj;;;;;;:::::,,   Learning: ......  Rust, Go
+;;;;;;;;;;#@@@@@@@@    @@@@@@@@@@;:::::,,,,,   ML:       ......  attention, hands-on from scratch
+jjjjjjjjj;%@@@@@@@@@##@@@@@@@@@@@:::::,,,,,,
+jjjjjjjjj;,:'@@@@@@@`  '@@@@@@@@'::::,,,,,,.   Currently --------------------------
+;jjjjjjjgg;;;,.   .::,,, ..  ,:::::::,,,,,..   Building: ......  Context Cloud
+::::;;jjjjjjj:, ..,,,......  :::::::,,,,,...   Fuel:     ......  peach green tea, cookies
+,,::::;jjjj;j;:,.,::...... .,:::::,,,,,,....
+,,::::;;jjj;jjjj;:,,.     .::::::,,,,,,.....   Stats ------------------------------
+,,,,,::;;jgg;;:;jj;:::,..,::::::,,,,,,......   Uptime:   ......  {{ auto }}
+,,::::jg%#@g::,::;jjj;:.:;::::,,,,,,,,......   Commits:  ......  {{ auto }}
+:;;ggg%%%#@#,.,,,:::,.  :;:;::::,,,,........
+:::;jgjgg%##%,...,,,.   ::;:;::j;.,,,.......
+,:::;;;gggg%#%:         :;;::;;j;.,;;,......
+:,,::,;jjjjg%%%j,.     ,;;:;,;j;j,,j;:......
+,,,:,,,;jg;;g%gggjj;,,:;;;:;:;j;%;,j;,,.....
+,,,,.,,,;g;:;%%;ggg%gj;:j;:;::j;%j,;;,:,....
