@@ -31,7 +31,7 @@ jobs:
           # user-level contributionsCollection or private contributions.
           GH_TOKEN: ${{ secrets.README_TOKEN || secrets.GITHUB_TOKEN }}
           GH_USER: wylliamunlimited
-          PAPER: "currently reading — set me in readme.yml"
+          PAPER: "1"
         run: python scripts/build_readme.py
 
       - name: Commit if changed
